@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,20 +18,20 @@
 
 <body>
     <header id="header">
-        <nav class="header-nav">
-            <div class="container">
-                <div class="header-nav-inner text-md-right text-xs-center">
-                    <div class="header-top-text">
-                        <div class="row justify">
-                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                <!-- <div class="custom-text hidden-md-down">World's Fastest Online Shopping Destination</div> -->
-                                <div class="customer-support">
-                                    <span>Customer Support: </span>
-                                    <span>123-456-7890</span>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-sm-5 col-xs-5">
-                                <!-- <div class="currency">
+		<nav class="header-nav">
+			<div class="container">
+				<div class="header-nav-inner text-md-right text-xs-center">
+					<div class="header-top-text">
+						<div class="row justify">
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<!-- <div class="custom-text hidden-md-down">World's Fastest Online Shopping Destination</div> -->
+								<div class="customer-support">
+									<span>Customer Support: </span>
+									<span>123-456-7890</span>
+								</div>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+								<div class="currency">
 									<div class="dropdown">
 										<button class="btn btn-secondary btn-unstyle dropdown-toggle" type="button"
 											id="currencydropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,155 +55,153 @@
 											<li><a class="dropdown-item" href="#">Hindi</a></li>
 										</ul>
 									</div>
-								</div> -->
-                                <div class="wishlist">
-                                    <a href="#">Wishlist (0)</a>
-                                </div>
-                            </div>
-                        </div>
+								</div>
+								<div class="wishlist">
+									<a href="#">Wishlist (0)</a>
+								</div>
+							</div>
+						</div>
 
-                    </div>
+					</div>
 
-                </div>
-            </div>
-        </nav>
-        <div class="header-top">
-            <div class="container">
-                <div class="header-top-inner">
-                    <div class="header-top-left">
-                        <a href="index.html">
-                            <img src="images/logo.png" alt="logo">
-                        </a>
-                    </div>
-                    <div class="header-top-center">
-                        <div class="search-box">
-                            <div id="search_widget"
-                                data-search-controller-url="//www.mahardhi.com/prestashop/MT03/flipmart/01/en/search"
-                                class="search-widget">
-                                <div class="search-form">
-                                    <form method="get" action="/" id="searchbox">
-                                        <input type="text" id="input_search" name="search_query" placeholder="Search..."
-                                            class="ui-autocomplete-input" autocomplete="off" autofocus="autofocus">
-                                        <button type="submit">
-                                            <i class="fa fa-search"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header-top-right">
-                        <div class="header-right-inner">
-                            <div class="header-cart">
-                                <a href="#">
-                                    <i class="fa fa-shopping-bag"></i>
-                                    <span class="shop-cart-inner">
-                                        <span class="cart-title">
-                                            My Cart - <span>Rs. 500</span>
-                                        </span>
-                                    </span>
-                                    <span class="cart-products-counts ">1</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-bottom">
-            <div class="container">
-                <div class="header-bottom-inner">
-                    <div class="header-bottom-menus">
-                        <nav id="mob-nav" class="navbar navbar-light">
-                            <div class="container-fluid">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                                    aria-labelledby="offcanvasNavbarLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pravidhi Store</h5>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Special</a>
-                                            </li>
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#"
-                                                    id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown"
-                                                    aria-expanded="false">
-                                                    Categories
-                                                </a>
-                                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                                    <li><a class="dropdown-item" href="#">Brand 1</a></li>
-                                                    <li><a class="dropdown-item" href="#">Brand 2</a></li>
-                                                    <li><a class="dropdown-item" href="#">Brand 3</a></li>
-                                                    <li><a class="dropdown-item" href="#">Brand 4</a></li>
-                                                    <li><a class="dropdown-item" href="#">Brand 5</a></li>
-                                                    <li><a class="dropdown-item" href="#">Brand 6</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Delivery</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">About Us</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Blog</a>
-                                            </li>
-                                        </ul>
-                                        <!-- <form class="d-flex">
+				</div>
+			</div>
+		</nav>
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top-inner">
+					<div class="header-top-left">
+						<a href="index.html">
+							<img src="images/logo.png" alt="logo">
+						</a>
+					</div>
+					<div class="header-top-center">
+						<div class="search-box">
+							<div id="search_widget" data-search-controller-url="#" class="search-widget">
+								<div class="search-form">
+									<form method="get" action="/" id="searchbox">
+										<input type="text" id="input_search" name="search_query" placeholder="Search..."
+											class="ui-autocomplete-input" autocomplete="off" autofocus="autofocus">
+										<button type="submit">
+											<i class="fa fa-search"></i>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-top-right">
+						<div class="header-right-inner">
+							<div class="header-cart">
+								<a href="shoppingcart.html">
+									<i class="fa fa-shopping-bag"></i>
+									<span class="shop-cart-inner">
+										<span class="cart-title">
+											My Cart - <span>Rs. 500</span>
+										</span>
+									</span>
+									<span class="cart-products-counts ">1</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-bottom-inner">
+					<div class="header-bottom-menus">
+						<nav id="mob-nav" class="navbar navbar-light">
+							<div class="container-fluid">									
+								<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+									data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+									aria-labelledby="offcanvasNavbarLabel">
+									<div class="offcanvas-header">
+										<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pravidhi Store</h5>
+										<button type="button" class="btn-close text-reset"
+											data-bs-dismiss="offcanvas" aria-label="Close"></button>
+									</div>
+									<div class="offcanvas-body">
+										<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+											<li class="nav-item">
+												<a class="nav-link active" aria-current="page" href="#">Home</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Special</a>
+											</li>
+											<li class="nav-item dropdown">
+												<a class="nav-link dropdown-toggle" href="#"
+													id="offcanvasNavbarDropdown" role="button"
+													data-bs-toggle="dropdown" aria-expanded="false">
+													Categories
+												</a>
+												<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+													<li><a class="dropdown-item" href="#">Brand 1</a></li>
+													<li><a class="dropdown-item" href="#">Brand 2</a></li>
+													<li><a class="dropdown-item" href="#">Brand 3</a></li>
+													<li><a class="dropdown-item" href="#">Brand 4</a></li>
+													<li><a class="dropdown-item" href="#">Brand 5</a></li>
+													<li><a class="dropdown-item" href="#">Brand 6</a></li>
+												</ul>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Delivery</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">About Us</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Blog</a>
+											</li>
+										</ul>
+										<!-- <form class="d-flex">
 											<input class="form-control me-2" type="search" placeholder="Search"
 												aria-label="Search">
 											<button class="btn btn-outline-success" type="submit">Search</button>
 										</form> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                        <ul class="menu-bar">
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">special</a></li>
-                            <li class="dropdown-brand dropdown">
-                                <a class="dropdown-link" href="#">all brands</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Brand 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Brand 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Brand 3</a></li>
-                                    <li><a class="dropdown-item" href="#">Brand 4</a></li>
-                                    <li><a class="dropdown-item" href="#">Brand 5</a></li>
-                                    <li><a class="dropdown-item" href="#">Brand 6</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">delivery</a></li>
-                            <li><a href="#">about us</a></li>
-                            <li><a href="#">blog</a></li>
-                        </ul>
-                        <div class="user-info">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-unstyle dropdown-toggle" type="button"
-                                    id="userinfodropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa fa-user"></i> &nbsp; Account
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="userinfodropdown">
-                                    <li><a class="dropdown-item" href="#">Sign in</a></li>
-                                    <li><a class="dropdown-item" href="#">Register</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+									</div>
+								</div>
+							</div>
+						</nav>
+						<ul class="menu-bar">
+							<li><a href="#">home</a></li>
+							<li><a href="#">special</a></li>
+							<li class="dropdown-brand dropdown">
+								<a class="dropdown-link" href="#">all brands</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Brand 1</a></li>
+									<li><a class="dropdown-item" href="#">Brand 2</a></li>
+									<li><a class="dropdown-item" href="#">Brand 3</a></li>
+									<li><a class="dropdown-item" href="#">Brand 4</a></li>
+									<li><a class="dropdown-item" href="#">Brand 5</a></li>
+									<li><a class="dropdown-item" href="#">Brand 6</a></li>
+								</ul>
+							</li>
+							<li><a href="#">delivery</a></li>
+							<li><a href="#">about us</a></li>
+							<li><a href="#">blog</a></li>
+						</ul>
+						<div class="user-info">
+							<div class="dropdown">
+								<button class="btn btn-secondary btn-unstyle dropdown-toggle" type="button"
+									id="userinfodropdown" data-bs-toggle="dropdown" aria-expanded="false">
+									<i class="fa fa-user"></i> &nbsp; Account
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="userinfodropdown">
+									<li><a class="dropdown-item" href="login.html">Sign in</a></li>
+									<li><a class="dropdown-item" href="register.html">Register</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
     <main class="homepage">
         <div class="container">
             <div class="row">
@@ -1297,6 +1295,11 @@
         }, 1000);
     </script>
     <!-- count down timer Plugin Code-->
+
+    <!-- js for zoom image on hover start -->
+
+    
+    <!-- js for zoom image on hover end -->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

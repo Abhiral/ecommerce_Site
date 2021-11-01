@@ -765,7 +765,7 @@ h2.products-section-title, h2.product-section-title {
     transform: scale(1.2); 
 }
 
-#left-column .product-item,  #right-column .product-item{
+#left-column .product-item,  #right-column .product-item, .wishlist-table .product-item{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -801,7 +801,7 @@ h2.products-section-title, h2.product-section-title {
     position: relative;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"] {
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"], select{
     border: 1px solid #e2e2e2;
     background: #fff;
     -webkit-border-radius: 5px;
@@ -811,7 +811,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     outline: none;
     max-height: 40px;
     font-weight: normal;
-    padding: 10px 15px;
+    padding: 7px 15px;
     transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
@@ -1074,6 +1074,11 @@ footer{
     letter-spacing: -1px;
 }
 
+.single-product-page .detail-block .single-product-gallery .img-cover img{
+    transition: opacity .3s ease-in-out;
+    cursor: zoom-in;
+}
+
 .review-count a, .rating-count, .reviewer{
     color: #aaa;
     text-decoration: none;
@@ -1132,7 +1137,7 @@ footer{
     text-align: center;
 }
 
-.cart-btn, .register-btn, .payment-btn{
+.cart-btn, .register-btn, .payment-btn, .order-delivery-btn{
     background-color: #f33535;
     color: #fff;
     width: 100%;
@@ -1144,7 +1149,7 @@ footer{
     -o-transition: all 0.8s ease;
 }
 
-.cart-btn:hover, .register-btn:hover, .payment-btn:hover{
+.cart-btn:hover, .register-btn:hover, .payment-btn:hover, .order-delivery-btn:hover{
     background-color: #252525;
     color: #fff;
 }
@@ -1249,7 +1254,7 @@ footer{
     width: 100px;
 }
 
-.review-section .img-cover img, .register-page .form-input .input-cover input, .login-page .form-input .input-cover input{
+.review-section .img-cover img, .register-page .form-input .input-cover input, .login-page .form-input .input-cover input, .order-delivery-page .input-cover select{
     width: 100%;
 }
 
@@ -1258,10 +1263,9 @@ footer{
     color: #aaa;
 }
 
-.register-page, .login-page, .shopping-cart-page, .order-page{
+.about-page, .faq-page, .contact-page, .login-page, .order-page, .my-wishlist-page, .register-page, .shopping-cart-page, .terms-conditions-page{
     background-color: #fff;
     padding: 20px;
-    margin-bottom: 30px;
 }
 
 .register-page .form-input, .login-page .form-input{
@@ -1296,7 +1300,7 @@ footer{
     padding: 50px 20px;
 }
 
-.shopping-cart-page .cart-head, .order-page .order-head{
+.shopping-cart-page .cart-head, .order-page .order-head, .wishlist-head{
     font-size: 26px;
     font-weight: 600;
 }
@@ -1341,8 +1345,27 @@ footer{
     margin-bottom: 20px;
 }
 
+.wishlist-table table{
+    width: 100%;
+}
+
+.wishlist-table tr{
+    border-top: 1px solid #ddd;
+}
+
+.wishlist-table table tr td{
+    padding: 20px;
+}
+
+.wishlist-table .cart-btn{
+    width: 150px;
+}
+
+.wishlist-table .fa-times{
+    color: #f33535;
+}
 .summary-section{
-    background-color: #4e5157;
+    background-color: #f1f3f6;
     padding: 20px;
 }
 
@@ -1414,6 +1437,153 @@ footer{
     margin-bottom: auto;
 }
 
+.error-page{
+    text-align: center;
+}
+
+.error-page h1{
+    font-size: 200px;
+    font-weight: 700;
+    color: #f33535;
+}
+
+.error-page p{
+    font-size: 18px;
+}
+
+.error-page .search-box{
+    max-width: 500px;
+    margin: 30px auto;
+} 
+
+.error-page .search-box .search-widget{
+    min-width: 500px;
+}
+
+.search-widget form div {
+    padding: 10px 5px;
+    font-weight: 700;
+}
+
+.error-page a{
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.error-page a:hover{
+    color: #f33535;
+}
+
+.terms-conditions .heading-title, .terms-conditions h4, .contact-page h4, .error-page a{
+    color: #555;
+}
+
+.terms-conditions li, .terms-conditions p, .contact-page label, .contact-page p{
+    font-size: 15px;
+    color: #757575;
+    text-align: justify;
+}
+
+.terms-conditions .heading-title, .faq .heading-title, .about-page .heading-title{
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;    
+}
+
+.terms-conditions li{
+    padding-bottom: 20px;    
+}
+
+.terms-conditions h4, .contact-page h4{    
+    margin: 20px 0 30px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px!important;
+}
+
+.terms-conditions a.contact-form{
+    text-decoration: none;
+}
+
+.contact-page .contact-map{
+    margin-bottom: 30px;
+}
+
+.contact-page .mapouter{
+    position:relative;
+    text-align:right;
+    height:400px;
+    width:100%;
+}
+
+.contact-page .gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:400px;
+    width:100%;
+}
+
+.contact-page input, .contact-page textarea{
+    width: 100%;
+}
+
+.contact-page textarea{
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #252525;
+    outline: none;
+    font-weight: normal;
+    padding: 7px 15px;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    display: inline-block;
+    text-transform: none;
+}
+
+.contact-page .input-field div{
+    margin-bottom: 10px;
+}
+
+.contact-page label span{
+    color: #f33535;
+}
+
+.contact-page .btn{
+    text-transform: uppercase;
+}
+
+.wishlist-table .product-image-wrapper{
+    width: 15%;
+}
+
+.wishlist-table .product-image-wrapper img{
+    width: 100%;
+}
+
+.wishlist-table .product-description{
+    padding: 20px 60px;
+}
+
+.wishlist-table .product-image-wrapper img:hover{
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1); 
+}
+
+.wishlist-table .product-miniature{
+    margin-bottom: 0;
+}
+
+.faq-page .accordion-body, .about-content p{
+    font-size: 14px;
+    color: #757575;
+    text-align: justify;
+}
 
 @media  (min-width: 1441px){
     .banner-section .promo-title{

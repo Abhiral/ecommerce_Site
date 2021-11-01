@@ -1,0 +1,2197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- js for zoom image on hover -->
+    <script src="js/jquerycdn.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.exzoom.js"></script>
+
+    <!-- zoom on hover CSS -->
+    <link href="css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.exzoom.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Pravidhi Store</title>
+</head>
+
+<body>
+	<header id="header">
+		<nav class="header-nav">
+			<div class="container">
+				<div class="header-nav-inner text-md-right text-xs-center">
+					<div class="header-top-text">
+						<div class="row justify">
+							<div class="col-md-5 col-sm-5 col-xs-12">
+								<!-- <div class="custom-text hidden-md-down">World's Fastest Online Shopping Destination</div> -->
+								<div class="customer-support">
+									<span>Customer Support: </span>
+									<span>123-456-7890</span>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="currency">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-unstyle dropdown-toggle" type="button"
+											id="currencydropdown" data-bs-toggle="dropdown" aria-expanded="false">
+											Currency: NRP
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="currencydropdown">
+											<li><a class="dropdown-item" href="#">NRP</a></li>
+											<li><a class="dropdown-item" href="#">USD</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="language">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-unstyle dropdown-toggle" type="button"
+											id="languagedropdown" data-bs-toggle="dropdown" aria-expanded="false">
+											Language: English
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="languagedropdown">
+											<li><a class="dropdown-item" href="#">English</a></li>
+											<li><a class="dropdown-item" href="#">Nepali</a></li>
+											<li><a class="dropdown-item" href="#">Hindi</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="wishlist">
+									<a href="#">Wishlist (0)</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</nav>
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top-inner">
+					<div class="header-top-left">
+						<a href="index.html">
+							<img src="images/logo.png" alt="logo">
+						</a>
+					</div>
+					<div class="header-top-center">
+						<div class="search-box">
+							<div id="search_widget" data-search-controller-url="#" class="search-widget">
+								<div class="search-form">
+									<form method="get" action="/" id="searchbox">
+										<input type="text" id="input_search" name="search_query" placeholder="Search..."
+											class="ui-autocomplete-input" autocomplete="off" autofocus="autofocus">
+										<button type="submit">
+											<i class="fa fa-search"></i>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-top-right">
+						<div class="header-right-inner">
+							<div class="header-cart">
+								<a href="shoppingcart.html">
+									<i class="fa fa-shopping-bag"></i>
+									<span class="shop-cart-inner">
+										<span class="cart-title">
+											<label class="cart">My Cart</label> - <span>Rs. 500</span>
+										</span>
+									</span>
+									<span class="cart-products-counts ">1</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-bottom-inner">
+					<div class="header-bottom-menus">
+						<nav id="mob-nav" class="navbar navbar-light">
+							<div class="container-fluid">									
+								<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+									data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+									aria-labelledby="offcanvasNavbarLabel">
+									<div class="offcanvas-header">
+										<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pravidhi Store</h5>
+										<button type="button" class="btn-close text-reset"
+											data-bs-dismiss="offcanvas" aria-label="Close"></button>
+									</div>
+									<div class="offcanvas-body">
+										<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+											<li class="nav-item">
+												<a class="nav-link active" aria-current="page" href="#">Home</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Special</a>
+											</li>
+											<li class="nav-item dropdown">
+												<a class="nav-link dropdown-toggle" href="#"
+													id="offcanvasNavbarDropdown" role="button"
+													data-bs-toggle="dropdown" aria-expanded="false">
+													Categories
+												</a>
+												<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+													<li><a class="dropdown-item" href="#">Brand 1</a></li>
+													<li><a class="dropdown-item" href="#">Brand 2</a></li>
+													<li><a class="dropdown-item" href="#">Brand 3</a></li>
+													<li><a class="dropdown-item" href="#">Brand 4</a></li>
+													<li><a class="dropdown-item" href="#">Brand 5</a></li>
+													<li><a class="dropdown-item" href="#">Brand 6</a></li>
+												</ul>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Delivery</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">About Us</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Blog</a>
+											</li>
+										</ul>
+										<!-- <form class="d-flex">
+											<input class="form-control me-2" type="search" placeholder="Search"
+												aria-label="Search">
+											<button class="btn btn-outline-success" type="submit">Search</button>
+										</form> -->
+									</div>
+								</div>
+							</div>
+						</nav>
+						<ul class="menu-bar">
+							<li><a href="#">home</a></li>
+							<li><a href="#">special</a></li>
+							<li class="dropdown-brand dropdown">
+								<a class="dropdown-link" href="#">all brands</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Brand 1</a></li>
+									<li><a class="dropdown-item" href="#">Brand 2</a></li>
+									<li><a class="dropdown-item" href="#">Brand 3</a></li>
+									<li><a class="dropdown-item" href="#">Brand 4</a></li>
+									<li><a class="dropdown-item" href="#">Brand 5</a></li>
+									<li><a class="dropdown-item" href="#">Brand 6</a></li>
+								</ul>
+							</li>
+							<li><a href="#">delivery</a></li>
+							<li><a href="#">about us</a></li>
+							<li><a href="#">blog</a></li>
+						</ul>
+						<div class="user-info">
+							<div class="dropdown">
+								<button class="btn btn-secondary btn-unstyle dropdown-toggle" type="button"
+									id="userinfodropdown" data-bs-toggle="dropdown" aria-expanded="false">
+									<i class="fa fa-user"></i> &nbsp; Account
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="userinfodropdown">
+									<li><a class="dropdown-item" href="login.html">Sign in</a></li>
+									<li><a class="dropdown-item" href="register.html">Register</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="homepage">
+		<div class="container">
+			<div class="row">
+				<div id="left-column" class="col-12 col-sm-12 col-md-3 col-lg-3">
+					<div id="_desktop_verticalmenu">
+						<div class="mt-menu-vertical">
+							<h3 class="title_vertical">Categories</h3>
+							<ul class="menu-content">
+								<li class="menu-item">
+									<a href="#">Clothes
+										<i class="fa fa-angle-right"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Mens' Wear</a></li>
+										<li><a class="dropdown-item" href="#">Womens' Wear</a></li>
+										<li><a class="dropdown-item" href="#">Child's Wear</a></li>
+										<li><a class="dropdown-item" href="#">Shoes</a></li>
+										<li><a class="dropdown-item" href="#">Brand 5</a></li>
+										<li><a class="dropdown-item" href="#">Brand 6</a></li>
+									</ul>
+								</li>
+								<li class="menu-item">
+									<a href="#">Electronics
+										<i class="fa fa-angle-right"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Mobile Phone</a></li>
+										<li><a class="dropdown-item" href="#">Home Appliances</a></li>
+										<li><a class="dropdown-item" href="#">Sound System</a></li>
+										<li><a class="dropdown-item" href="product.html">Gadgetts</a></li>
+										<li><a class="dropdown-item" href="#">Brand 5</a></li>
+										<li><a class="dropdown-item" href="#">Brand 6</a></li>
+									</ul>
+								</li>
+								<li class="menu-item">
+									<a href="#">Home & Furniture</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Sports</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Mobile & Tablets</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Beauty & Health</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Beauty & Health</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Computer & Gaming
+										<i class="fa fa-angle-right"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Laptops</a></li>
+										<li><a class="dropdown-item" href="#">Desktops</a></li>
+										<li><a class="dropdown-item" href="#">Palmtops</a></li>
+										<li><a class="dropdown-item" href="#">Gaming PCs</a></li>
+										<li><a class="dropdown-item" href="#">Brand 5</a></li>
+										<li><a class="dropdown-item" href="#">Brand 6</a></li>
+									</ul>
+								</li>
+								<li class="menu-item">
+									<a href="#">Purse</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="widget widget_media_image">
+						<a class="sidebar-banner banner" href="#">
+							<img src="images/sidebar_banner.jpg" alt="" title="">
+						</a>
+					</div>
+					<div class="promo-box-section section-margin-top">
+						<h2 class="h2 product-section-title">Our Services</h2>
+						<div class="promo-box-inner section-box">
+							<div class="pro-box col-lg-12 col-xs-6">
+								<div class="promo-item">
+									<div class="promo-box">
+										<div class="promo-icon">
+
+										</div>
+										<div class="promo-info">
+											<h6 class="promo-title">Free Shipping</h6>
+											<div class="promo-desc">For all order over $100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pro-box col-lg-12 col-xs-6">
+								<div class="promo-item">
+									<div class="promo-box">
+										<div class="promo-icon">
+
+										</div>
+										<div class="promo-info">
+											<h6 class="promo-title">Cash on delivery</h6>
+											<div class="promo-desc">100% money back</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pro-box col-lg-12 col-xs-6">
+								<div class="promo-item">
+									<div class="promo-box">
+										<div class="promo-icon">
+
+										</div>
+										<div class="promo-info">
+											<h6 class="promo-title">Special Gift Card</h6>
+											<div class="promo-desc">Offer Special bonuses</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pro-box col-lg-12 col-xs-6">
+								<div class="promo-item">
+									<div class="promo-box">
+										<div class="promo-icon">
+
+										</div>
+										<div class="promo-info">
+											<h6 class="promo-title">24/7 Support</h6>
+											<div class="promo-desc">Answer for questions</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="featured-products section-margin-top">
+						<div class="section-box">
+							<h2 class="h2 products-section-title">
+								<span>Bestsellers</span>
+							</h2>
+							<div class="content-box">
+								<div class="products col-lg-12 col-sm-12 col-12">
+									<div class="product-miniature">
+										<div class="product-item">
+											<div class="product-image-wrapper">
+												<a href="#">
+													<img src="images/bag.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-description">
+												<h6 class="product-title">
+													<a href="#">Fancy Purse</a>
+												</h6>
+												<div class="grid-reviews">
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star"></span>
+												</div>
+												<div class="product-price-and-shipping">
+													<span itemprop="price" class="price">Rs. 20.88</span>
+													<span class="regular-price"> Rs. 34.80 </span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-miniature">
+										<div class="product-item">
+											<div class="product-image-wrapper">
+												<a href="#">
+													<img src="images/bag.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-description">
+												<h6 class="product-title">
+													<a href="#">Fancy Purse</a>
+												</h6>
+												<div class="grid-reviews">
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star"></span>
+												</div>
+												<div class="product-price-and-shipping">
+													<span itemprop="price" class="price">Rs. 20.88</span>
+													<span class="regular-price"> Rs. 34.80 </span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-miniature">
+										<div class="product-item">
+											<div class="product-image-wrapper">
+												<a href="#">
+													<img src="images/bag.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-description">
+												<h6 class="product-title">
+													<a href="#">Fancy Purse</a>
+												</h6>
+												<div class="grid-reviews">
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star"></span>
+												</div>
+												<div class="product-price-and-shipping">
+													<span itemprop="price" class="price">Rs. 20.88</span>
+													<span class="regular-price"> Rs. 34.80 </span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-miniature">
+										<div class="product-item">
+											<div class="product-image-wrapper">
+												<a href="#">
+													<img src="images/bag.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-description">
+												<h6 class="product-title">
+													<a href="#">Fancy Purse</a>
+												</h6>
+												<div class="grid-reviews">
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star"></span>
+												</div>
+												<div class="product-price-and-shipping">
+													<span itemprop="price" class="price">Rs. 20.88</span>
+													<span class="regular-price"> Rs. 34.80 </span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="content-wrapper" class="col-12 col-sm-12 col-md-12 col-lg-6">
+					<section id="main">
+						<div class="intro-slider">
+							<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="images/banner-1.jpg" class="d-block w-100" alt="banner image">
+										<div class="carousel-caption d-none d-md-block">
+											<h1 class="promo-title">Fashion Sale</h1>
+											<div class="promo-sale">Get up to <span>50% OFF</span></div>
+											<div class="promo-desc">on Clothes &amp; Accessories</div>
+											<button type="button" class="promo-btn btn">SHOP NOW</button>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="images/banner-2.jpg" class="d-block w-100" alt="banner image">
+										<div class="carousel-caption d-none d-md-block">
+											<h1 class="promo-title">Mega Sale</h1>
+											<div class="promo-sale">Get up to <span>40% OFF</span></div>
+											<div class="promo-desc">on Mobile &amp; Accessories</div>
+											<button type="button" class="promo-btn btn">SHOP NOW</button>
+										</div>
+									</div>									
+								</div>
+								<button class="carousel-control-prev" type="button"
+									data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button"
+									data-bs-target="#carouselExampleFade" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div>
+						<section class="promo-banner-wrapper banner-section section-margin-top">
+							<div class="promo-banner-text">
+								<h5 class="promo-title mb-0">Free Shipping On All Orders</h5>
+								<span class="promo-desc">Valid On all Order Untill This Week. Use Offer Code:
+									<span>“SHIPFREE”</span>.</span>
+							</div>
+							<button type="button" class="promo-btn btn">SHOP NOW</button>
+						</section>
+						<section class="product-cover section-margin-top">
+							<div class="section-box">
+								<div class="mt_title">
+									<h2 class="h2 products-section-title">Featured Products</h2>
+								</div>
+								<div class="special-products">
+									<div class="row">
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="productdescription.html">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+															<span class="regular-price"> Rs. 34.80 </span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add	to cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+															<span class="regular-price"> Rs. 34.80 </span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to
+																		cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+															<span class="regular-price"> Rs. 34.80 </span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to
+																		cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+															<span class="regular-price"> Rs. 34.80 </span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to
+																		cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+															<span class="regular-price"> Rs. 34.80 </span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to
+																		cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+															<span class="regular-price"> Rs. 34.80 </span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to
+																		cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+															<span class="regular-price"> Rs. 34.80 </span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to
+																		cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+															<span class="regular-price"> Rs. 34.80 </span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to
+																		cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="product-cover section-margin-top">
+							<div class="section-box">
+								<div class="mt_title">
+									<h2 class="h2 products-section-title">Our Products</h2>
+								</div>
+								<div class="special-products">
+									<div class="row">
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+											<div class="product-miniature">
+												<div class="product-item">
+													<div class="product-image-wrapper">
+														<a href="#">
+															<img src="images/earphone.jpg" class="d-block w-100"
+																alt="earphone">
+														</a>
+														<div class="prdouct-btn-wrapper grid">
+															<div
+																class="wishlist product-wishlist-icon product-btn-icon">
+																<a class="wishlist-icon addToWishlist wishlistProd_1"
+																	href="#" title="Add to Wishlist">
+																	<i class="fa fa-heart"></i>
+																</a>
+															</div>
+															<div class="product-btn-icon-quickview product-btn-icon">
+																<a class="quick-view" href="#" title="Quick View">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<div class="compare product-compare-icon product-btn-icon">
+																<a class="add_to_compare title_font btn-product"
+																	href="#" title="Add to Compare">
+																	<i class="fa fa-exchange"></i>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="product-description">
+														<h6 class="product-title">
+															<a href="#">Fancy Purse</a>
+														</h6>
+														<div class="grid-reviews">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="product-price-and-shipping">
+															<span itemprop="price" class="price">Rs. 20.88</span>
+														</div>
+														<div class="product-add-to-cart grid-add">
+															<form class="btn-add-to-cart">
+																<input type="hidden" name="token">
+																<input type="hidden" name="id_product" value="1">
+																<button class="add-to-cart btn"
+																	data-button-action="add-to-cart" type="submit">
+																	<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add
+																		to cart</span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</section>
+				</div>
+				<div id="right-column" class="col-12 col-sm-12 col-md-3 col-lg-3">
+					<section class="promo-banner-wrapper banner-section1">
+						<div class="promo-banner-inner">
+							<div class="banner1">
+								<div class="promo-banner">
+									<a href="#">
+										<img src="images/watch.jpg" alt="watch">
+									</a>
+									<div class="promo-text-wrapper">
+										<div class="promo-text">
+											<span>Watches</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="banner1">
+								<div class="promo-banner">
+									<a href="#">
+										<img src="images/headphone.jpg" alt="headphone">
+									</a>
+									<div class="promo-text-wrapper">
+										<div class="promo-text">
+											<span>Headphones</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="special-products offer-section">
+						<div class="section-box">
+							<div class="mt_title">
+								<h2 class="h2 products-section-title">Deal of the day</h2>
+							</div>
+							<div class="special-products-content">
+								<div class="intro-slider">
+									<div id="offerSlide" class="carousel slide carousel-fade"
+										data-bs-ride="carousel">
+										<div class="carousel-inner">
+											<div class="carousel-item product-item active">
+												<div class="product-image-wrapper">
+													<a href="#">
+														<img src="images/earphone.jpg" class="d-block w-100"
+															alt="earphone">
+													</a>
+													<div class="prdouct-btn-wrapper grid">
+														<div class="wishlist product-wishlist-icon product-btn-icon">
+															<a class="wishlist-icon addToWishlist wishlistProd_1"
+																href="#" title="Add to Wishlist">
+																<i class="fa fa-heart"></i>
+															</a>
+														</div>
+														<div class="product-btn-icon-quickview product-btn-icon">
+															<a class="quick-view" href="#" title="Quick View">
+																<i class="fa fa-eye"></i>
+															</a>
+														</div>
+														<div class="compare product-compare-icon product-btn-icon">
+															<a class="add_to_compare title_font btn-product" href="#"
+																title="Add to Compare">
+																<i class="fa fa-exchange"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="product-description">
+													<h6 class="product-title">
+														<a href="#">Fancy Purse</a>
+													</h6>
+													<div class="grid-reviews">
+														<span class="fa fa-star checked"></span>
+														<span class="fa fa-star checked"></span>
+														<span class="fa fa-star checked"></span>
+														<span class="fa fa-star checked"></span>
+														<span class="fa fa-star"></span>
+													</div>
+													<div class="product-price-and-shipping">
+														<span itemprop="price" class="price">Rs. 20.88</span>
+														<span class="regular-price"> Rs. 34.80 </span>
+													</div>
+													<div class="product-add-to-cart grid-add">
+														<form class="btn-add-to-cart">
+															<input type="hidden" name="token">
+															<input type="hidden" name="id_product" value="1">
+															<button class="add-to-cart btn"
+																data-button-action="add-to-cart" type="submit">
+																<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add to
+																	cart</span>
+															</button>
+														</form>
+													</div>													
+												</div>
+											</div>
+											<div class="carousel-item product-item">
+												<div class="product-image-wrapper">
+													<a href="#">
+														<img src="images/headphone-blue.jpg" class="d-block w-100"
+															alt="earphone">
+													</a>
+													<div class="prdouct-btn-wrapper grid">
+														<div class="wishlist product-wishlist-icon product-btn-icon">
+															<a class="wishlist-icon addToWishlist wishlistProd_1"
+																href="#" title="Add to Wishlist">
+																<i class="fa fa-heart"></i>
+															</a>
+														</div>
+														<div class="product-btn-icon-quickview product-btn-icon">
+															<a class="quick-view" href="#" title="Quick View">
+																<i class="fa fa-eye"></i>
+															</a>
+														</div>
+														<div class="compare product-compare-icon product-btn-icon">
+															<a class="add_to_compare title_font btn-product" href="#"
+																title="Add to Compare">
+																<i class="fa fa-exchange"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="product-description">
+													<h6 class="product-title">
+														<a href="#">Fancy Purse</a>
+													</h6>
+													<div class="grid-reviews">
+														<span class="fa fa-star checked"></span>
+														<span class="fa fa-star checked"></span>
+														<span class="fa fa-star checked"></span>
+														<span class="fa fa-star checked"></span>
+														<span class="fa fa-star"></span>
+													</div>
+													<div class="product-price-and-shipping">
+														<span itemprop="price" class="price">Rs. 20.88</span>
+														<span class="regular-price"> Rs. 34.80 </span>
+													</div>
+													<div class="product-add-to-cart grid-add">
+														<form class="btn-add-to-cart">
+															<input type="hidden" name="token">
+															<input type="hidden" name="id_product" value="1">
+															<button class="add-to-cart btn"
+																data-button-action="add-to-cart" type="submit">
+																<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add to
+																	cart</span>
+															</button>
+														</form>
+													</div>													
+												</div>
+											</div>	
+											<div class="carousel-item product-item">
+												<div class="product-image-wrapper">
+													<a href="#">
+														<img src="images/sweater.jpg" class="d-block w-100"
+															alt="earphone">
+													</a>
+													<div class="prdouct-btn-wrapper grid">
+														<div class="wishlist product-wishlist-icon product-btn-icon">
+															<a class="wishlist-icon addToWishlist wishlistProd_1"
+																href="#" title="Add to Wishlist">
+																<i class="fa fa-heart"></i>
+															</a>
+														</div>
+														<div class="product-btn-icon-quickview product-btn-icon">
+															<a class="quick-view" href="#" title="Quick View">
+																<i class="fa fa-eye"></i>
+															</a>
+														</div>
+														<div class="compare product-compare-icon product-btn-icon">
+															<a class="add_to_compare title_font btn-product" href="#"
+																title="Add to Compare">
+																<i class="fa fa-exchange"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="product-description">
+													<h6 class="product-title">
+														<a href="#">Fancy Purse</a>
+													</h6>
+													<div class="grid-reviews">
+														<span class="fa fa-star checked"></span>
+														<span class="fa fa-star checked"></span>
+														<span class="fa fa-star checked"></span>
+														<span class="fa fa-star checked"></span>
+														<span class="fa fa-star"></span>
+													</div>
+													<div class="product-price-and-shipping">
+														<span itemprop="price" class="price">Rs. 20.88</span>
+														<span class="regular-price"> Rs. 34.80 </span>
+													</div>
+													<div class="product-add-to-cart grid-add">
+														<form class="btn-add-to-cart">
+															<input type="hidden" name="token">
+															<input type="hidden" name="id_product" value="1">
+															<button class="add-to-cart btn"
+																data-button-action="add-to-cart" type="submit">
+																<i class="fa fa-shopping-bag"></i>&nbsp;<span> Add to
+																	cart</span>
+															</button>
+														</form>
+													</div>													
+												</div>
+											</div>											
+										</div>
+										<button class="carousel-control-prev" type="button"
+											data-bs-target="#offerSlide" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button"
+											data-bs-target="#offerSlide" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
+								</div>
+								<div id="countdown" class="countdown">
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="promo-box-section section-margin-top hidden-md-down">
+						<h2 class="h2 product-section-title">Our Services</h2>
+						<div class="promo-box-inner section-box">
+							<div class="pro-box col-lg-12 col-xs-6">
+								<div class="promo-item">
+									<div class="promo-box">
+										<div class="promo-icon">
+
+										</div>
+										<div class="promo-info">
+											<h6 class="promo-title">Free Shipping</h6>
+											<div class="promo-desc">For all order over $100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pro-box col-lg-12 col-xs-6">
+								<div class="promo-item">
+									<div class="promo-box">
+										<div class="promo-icon">
+
+										</div>
+										<div class="promo-info">
+											<h6 class="promo-title">Cash on delivery</h6>
+											<div class="promo-desc">100% money back</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pro-box col-lg-12 col-xs-6">
+								<div class="promo-item">
+									<div class="promo-box">
+										<div class="promo-icon">
+
+										</div>
+										<div class="promo-info">
+											<h6 class="promo-title">Special Gift Card</h6>
+											<div class="promo-desc">Offer Special bonuses</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pro-box col-lg-12 col-xs-6">
+								<div class="promo-item">
+									<div class="promo-box">
+										<div class="promo-icon">
+
+										</div>
+										<div class="promo-info">
+											<h6 class="promo-title">24/7 Support</h6>
+											<div class="promo-desc">Answer for questions</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="email_subscription block_newsletter">
+						<h2 class="h2 product-section-title">Newsletter</h2>
+						<div id="footer_newsletter" class="block_newsletter_form">
+							<i class="fa fa-paper-plane"></i>
+							<p id="block-newsletter-label" class="block-newsletter-label">Get e-mail updates about our
+								latest shop and special offers.</p>
+							<form action="/">
+								<div class="block_newsletter_form_inner">
+									<input name="email" type="email" value="" placeholder="Your email address"
+										aria-labelledby="block-newsletter-label" required="">
+									<button class="btn" name="submitNewsletter" type="submit">
+										Subscribe
+									</button>
+									<input type="hidden" name="action" value="0">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container footer-container">
+			<div class="footer-top">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-lg-3">
+						<div class="title-wrap">
+							<h5 class="footer-title">Contact Us</h5>
+							<div class="footer-content">
+								<ul class="contact-address">
+									<li class="media">
+										<div class="pull-left">
+											<span class="icon fa-stack fa-lg">
+												<i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+											</span>
+										</div>
+										<div class="media-body">
+											<p>ThemesGround, 789 Main rd, Anytown, CA 12345 USA</p>
+										</div>
+									</li>
+									<li class="media">
+										<div class="pull-left">
+											<span class="icon fa-stack fa-lg">
+												<i class="fa fa-phone fa-stack-1x fa-inverse"></i>											
+											</span>
+										</div>
+										<div class="media-body">
+											<p>+(888) 123-4567<br>+(888) 456-7890</p>
+										</div>
+									</li>
+									<li class="media">
+										<div class="pull-left">
+											<span class="icon fa-stack fa-lg">
+												<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+											</span>
+										</div>
+										<div class="media-body">
+											<p>
+												<span><a href="#">flipmart@themesground.com</a></span>
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-lg-3">
+						<div class="title-wrap">
+							<h5 class="footer-title">CUSTOMER SERVICE</h5>
+							<div class="footer-content">
+								<ul class="list-unstyled">
+									<li><a href="#" title="Contact us">My Account</a></li>
+									<li><a href="#" title="About us">Order History</a></li>
+									<li><a href="#" title="faq">FAQ</a></li>
+									<li><a href="#" title="Popular Searches">Specials</a></li>
+									<li><a href="#" title="Where is my order?">Help Center</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-lg-3">
+						<div class="title-wrap">
+							<h5 class="footer-title">CORPORATION</h5>
+							<div class="footer-content">
+								<ul class="list-unstyled">
+									<li><a title="Your Account" href="#">About us</a></li>
+									<li><a title="Information" href="#">Customer Service</a></li>
+									<li><a title="Addresses" href="#">Company</a></li>
+									<li><a title="Addresses" href="#">Investor Relations</a></li>
+									<li><a title="Orders History" href="#">Advanced Search</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-lg-3">
+						<div class="title-wrap">
+							<h5 class="footer-title">WHY CHOOSE US</h5>
+							<div class="footer-content">
+								<ul class="list-unstyled">
+									<li><a href="#" title="About us">Shopping Guide</a></li>
+									<li><a href="#" title="Blog">Blog</a></li>
+									<li><a href="#" title="Company">Company</a></li>
+									<li><a href="#" title="Investor Relations">Investor Relations</a></li>
+									<li><a href="contact-us.html" title="Suppliers">Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="site-info share">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-5 no-padding social">
+						<ul class="link">
+						  <li class="fb pull-left"><a target="_blank" rel="nofollow" href="#" title="Facebook"></a></li>
+						  <li class="tw pull-left"><a target="_blank" rel="nofollow" href="#" title="Twitter"></a></li>
+						  <li class="googleplus pull-left"><a target="_blank" rel="nofollow" href="#" title="GooglePlus"></a></li>
+						  <!-- <li class="rss pull-left"><a target="_blank" rel="nofollow" href="#" title="RSS"></a></li> -->
+						  <!-- <li class="pintrest pull-left"><a target="_blank" rel="nofollow" href="#" title="PInterest"></a></li> -->
+						  <li class="linkedin pull-left"><a target="_blank" rel="nofollow" href="#" title="Linkedin"></a></li>
+						  <li class="youtube pull-left"><a target="_blank" rel="nofollow" href="#" title="Youtube"></a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-7 no-padding">
+						<p>
+							Copyright <i class="fa fa-copyright"></i> 2021 <a href="#">Pravidhi Store</a> | Developed by :
+							<a href="https://softechfoundation.com/">Softech Foundation</a>							
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    
+    <!-- count down timer Plugin Code-->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 30, 2021 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var countdownfunction = setInterval(function () {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(countdownfunction);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+    <!-- count down timer Plugin Code-->
+
+    <!-- js for zoom image on hover start -->
+    <script type="text/javascript">
+
+        $('.gallery-holder').imagesLoaded(function () {
+            $("#exzoom").exzoom({
+                autoPlay: false,
+            });
+            $("#exzoom").removeClass('hidden')
+        });
+
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <!-- js for zoom image on hover end -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
