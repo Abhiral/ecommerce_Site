@@ -1585,6 +1585,15 @@ footer{
     text-align: justify;
 }
 
+#exzoom {
+    width: 298px;
+    /*height: 298px;*/
+}
+
+.hidden {
+    display: none;
+}
+
 @media  (min-width: 1441px){
     .banner-section .promo-title{
         font-size: 14px;
